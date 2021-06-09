@@ -1,0 +1,33 @@
+<bal-card class="mt-6">
+  <bal-card-title>Title</bal-card-title>
+  <bal-card-content>
+    <div class="columns is-multiline">
+      <bal-field class="column is-half py-0" expanded>
+        <bal-field-label required>Firstname</bal-field-label>
+        <bal-field-control>
+          <bal-input
+            id="bal-input-1"
+            name="firstName"
+            placeholder="Enter your firstname"
+          ></bal-input>
+        </bal-field-control>
+        <bal-field-message color="danger">Required Field</bal-field-message>
+      </bal-field>
+
+      <bal-field class="column is-half py-0" expanded>
+        <bal-field-label required>Lastname</bal-field-label>
+        <bal-field-control>
+          <bal-input
+            id="bal-input-1"
+            name="lastName"
+            placeholder="Enter your firstname"
+          ></bal-input>
+        </bal-field-control>
+        <bal-field-message color="danger">Required Field</bal-field-message>
+      </bal-field>
+    </div>
+  </bal-card-content>
+  <bal-card-actions right>
+    <bal-button (click)="next()">Next</bal-button>
+  </bal-card-actions>
+</bal-card>
